@@ -1,0 +1,35 @@
+{
+  "name": "meeting-slides-web",
+  "version": "0.1.0",
+  "description": "会議の確定発言からスライド草稿を更新するWeb試作",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "node server/index.mjs --dev",
+    "build": "tsc --noEmit && vite build",
+    "start": "node server/index.mjs",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "lucide-react": "^1.49.0",
+    "pptxgenjs": "^4.0.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2"
+  },
+  "private": true,
+  "type": "module",
+  "overrides": {
+    "image-size": "^2.0.3"
+  }
+}
